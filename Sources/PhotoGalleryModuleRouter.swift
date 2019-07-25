@@ -27,7 +27,7 @@ public class PhotoGalleryModuleRouter: BaseRouter<PhotoGalleyModuleRoute> {
     }
 
     public override func prepareTransition(for route: PhotoGalleyModuleRoute) -> RouteTransition {
-        return RouteTransition(module: generateRootViewController(), isAnimated: true, showNavigationBar: true, showTabBar: false)
+        return RouteTransition(module: generateRootViewController(), isAnimated: true)
     }
 
     public override func rootTransition() -> RouteTransition {
