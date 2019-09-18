@@ -15,14 +15,11 @@ enum GalleryStyleType: String, Decodable {
 
 struct GalleryStyle: Decodable {
     let type: GalleryStyleType
-    private let _columns: String
-    var columns: Int {
-        return Int(_columns) ?? 2
-    }
+    let columns: Int
     
     enum CodingKeys: String, CodingKey {
         case type
-        case _columns = "columns"
+        case columns
     }
 }
 
